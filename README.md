@@ -25,5 +25,4 @@
                 ## Questions
                  Moth668
                 tdrice668@gmail.com
-                ### use this contact information to reach me with additional questions. 
-                        
+                ### use this contact information to reach me with additional questions.
