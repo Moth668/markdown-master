@@ -2,7 +2,7 @@
                 # Markdown Master
                 
                 ## Description
-                This project is designed to create a professional README.md file to be added to your GitHub Repositories.
+                j
 
                 # Table of Contents
                 undefined
@@ -11,19 +11,19 @@
                 undefined
                 
                 ## Usage
-                run node . to run the generator. It will ask you specific questions to build your README.md file. 
+                j
 
                 ## License
-                undefined
+                MIT
                 
                 ## Contributing
-                Please contribute.
+                j
                 
                 ## Tests
-                You should receive an error message if there is a problem writing to the file. Otherwise your message will say "File written successfully
+                j
 
                 ## Questions
-                Moth668
-                tdrice668@gmail.com
+                j
+                j
                 ### use this contact information to reach me with additional questions. 
                         
