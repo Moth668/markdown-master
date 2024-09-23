@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { type } = require('os');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -43,7 +42,13 @@ const questions = [
     {
         type: 'input',
         name: 'email',
-        message: 'Enter your email address.'
+        message: 'Enter your email address.',
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Choose a license for your application from the list of options.',
+        choices: ['MIT', 'GPL-3.0' , 'LGPL'],
     }
 ];
 
