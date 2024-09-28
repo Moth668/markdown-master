@@ -1,28 +1,40 @@
 
-                # Markdown Master
+# Markdown Master
                 
-                ## Description
-                This project is designed to create a professional README.md file to be added to your GitHub Repositories.
+## Description
+This project is designed to generate a professional quality README.md file based on your answers to the questions asked.
 
-                # Table of Contents
-                undefined
-                
-                ## Installation
-                undefined
-                
-                ## Usage
-                  run node . to run the generator. It will ask you specific questions to build your README.md file. 
+# Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+* [Video](#video)
 
-                ## License
-                MIT
                 
-                ## Contributing
-                Please contribute.
+## Installation
+You must use node.js and inquirer.
                 
-                ## Tests
-                You should receive an error message if there is a problem writing to the file. Otherwise your message will say "File written successfully
+## Usage
+Start the application by typing 'node .' in your terminal.
 
-                ## Questions
-                 Moth668
-                tdrice668@gmail.com
-                ### use this contact information to reach me with additional questions.
+## License
+MIT
+                
+## Contributing
+Contribute
+                
+## Tests
+Test
+
+## Questions
+### Use this contact information to reach me with additional questions.
+ * GitHub Username: Moth668
+ * GitHub Link: https://github.com/Moth668
+ * Email Address: tdrice668@gmail.com
+
+## Video
+### Link to walkthrough video that demonstrates functionality: https://www.youtube.com/
