@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const { type } = require('os');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -16,7 +17,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'install',
+        name: 'installation',
         message: 'Enter installation instructions.'
     },
     {
@@ -56,6 +57,11 @@ const questions = [
         choices: ['AFL-3.0', 'Apache-2.0', 'Artistic-2.0', 'BSL-1.0', 'BSD-2-Clause', 'BSD-3-Clause-Clear', 'BSD-4-Clause', '0BSD', 'CC', 'CC0-1.0', 'CC-BY-4.0', 'CC-BY-SA-4.0', 'WTFPL', 'ECL-2.0', 
             'EPL-2.0', 'EUPL-1.1', 'AGPL-3.0', 'GPL', 'GPL-2.0', 'GPL-3.0', 'LGPL', 'LGPL-2.1', 'LGPL-3.0', 'ISC', 'LPPL-1.3c', 'MS-PL', 'MIT', 'MPL-2.0', 'OSL-3.0', 'PostgreSQL', 'OFL-1.1', 'NCSA',
             'Unlicense', 'Zlib'],
+    },
+    {
+        type: 'link',
+        name: 'video',
+        message: 'Paste the link to your presentation video here',
     }
 ];
 
@@ -75,33 +81,45 @@ function init() {
     inquirer.prompt(questions).then((answers) => {
         // console.log(answers);
         const readmeContent = `
-                # ${answers.projectName}
+# ${answers.projectName}
                 
-                ## Description
-                ${answers.description}
+## Description
+${answers.description}
 
-                # Table of Contents
-                ${answers.toc}
-                
-                ## Installation
-                ${answers.installation}
-                
-                ## Usage
-                ${answers.usage}
+# Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+* [Video](#video)
 
-                ## License
-                ${answers.license}
                 
-                ## Contributing
-                ${answers.contribution}
+## Installation
+${answers.installation}
                 
-                ## Tests
-                ${answers.test}
+## Usage
+${answers.usage}
 
-                ## Questions
-                ${answers.username}
-                ${answers.email}
-                ### use this contact information to reach me with additional questions. 
+## License
+${answers.license}
+                
+## Contributing
+${answers.contribution}
+                
+## Tests
+${answers.test}
+
+## Questions
+### Use this contact information to reach me with additional questions.
+ * GitHub Username: ${answers.username}
+ * GitHub Link: ${answers.link}
+ * Email Address: ${answers.email}
+
+## Video
+### Link to walkthrough video that demonstrates functionality: ${answers.video}
                         `;
         writeToFile('README.md', readmeContent);
     });
