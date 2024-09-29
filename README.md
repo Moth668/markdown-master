@@ -40,8 +40,5 @@ N/A
  * Email Address: tdrice668@gmail.com
 
 ## Video
-
-<iframe src="https://drive.google.com/file/d/1kDtYeVg_LrZvuUKdhiW_gCsznYdevxFj/preview" width="640" height="480"></iframe>
-
 ### Link to walkthrough video that demonstrates functionality: https://www.youtube.com/watch?v=dGOwAQznPX0 
                         
